@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  
+        <head>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;
+          0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;
+          0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+          
+          <link rel="stylesheet" href="style1.css">
+
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        </head>
+
+        <body>
+        <div class= "container-fluid"> 
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand pl-5 logo" href="#"><img class="img-responsive" src="assets/logo.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active mx-4" aria-current="page" href="billing.html">Billing</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="#">Consumption</a>
+                  </li>
+                 
+                  <li class="nav-item mx-4">
+                    <a class="nav-link active" aria-current="page" href="payment.html">Payments</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link active" aria-current="page" href="subscription.html">Subscriptions</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex mx-4">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel ">
+            <div class="carousel-indicators mt-2">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/netflix.jfif" class="d-block w-100" alt="netflix" style="width:100% ; height: 500px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Netflix</h5>
+                  <p>Watch your favrouite shows on netflix now</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/prime.png" class="d-block w-100" alt="prime" style="width:100% ; height: 500px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Amazon Prime</h5>
+                  <p>Streaming your favrouite shows on Prime Original</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Disney+Hotstar.jpg" class="d-block w-100" alt="hotstar" style="width:100% ; height: 500px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Disney+Hotstar</h5>
+                  <p>Watch Now</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/zee5.jpg" class="d-block w-100" alt="hotstar" style="width:100% ; height: 500px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Zee5</h5>
+                  <p>Watch Now</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+          <!--fan-favourite-->
+<div class="section py-3 mx-5">
+  <div class="heading mb-5 ">
+      <h2 class="pl-3 ">Fan Favourites</h2>
+  </div>
+  <div class="row">
+      <div class="mx-auto mb-4 d-block col-lg-3 col-sm-6">
+          <div class="card effect3">
+              <div class="card-footer m2">
+                  <div class="card-footer__info">
+                      <div style="justify-content: space-between; display: flex">
+                          <h6 class="card-footer__title"><img style="width: 20px; height: 20px; box-shadow: none; " src="assets/play.png" alt="add">La Casa De Papel</h6>
+                          <img style="width: 20px; height: 20px; box-shadow: none; margin-top: 3%" src="assets/add.png" alt="add">
+                      </div>
+                      <small><p>A coming-of-age story based on the lives of street rappers in Mumbai<br>2 hr 33 min. | 2019 | <span style="color: yellow" class="material-icons">grade</span> 4.3</p></small>
+                  </div>
+              </div>
+              <div class="card-body">
+                  <img src="assets/lcdp.jpeg" class="card-image">
+              </div>
+          </div>
+      </div>
+      <div class="mx-auto d-block mb-4 col-lg-3 col-sm-6">
+          <div class="card effect3">
+              <div class="card-footer m2">
+                  <div class="card-footer__info">
+                      <div style="justify-content: space-between; display: flex">
+                          <h6 class="card-footer__title"><img style="width: 20px; height: 20px; box-shadow: none; " src="assets/play.png" alt="add">Inception</h6>
+                          <img style="width: 20px; height: 20px; box-shadow: none; margin-top: 3%" src="assets/add.png" alt="add">
+                      </div>
+                      <small><p>A coming-of-age story based on the lives of street rappers in Mumbai<br>2 hr 33 min. | 2019 | <span style="color: yellow" class="material-icons">grade</span> 4.3</p></small>
+                  </div>
+              </div>
+              <div class="card-body">
+                  <img src="assets/incep.jpeg" class="card-image">
+              </div>
+          </div>
+      </div>
+      <div class="mx-auto d-block mb-4 col-lg-3 col-sm-6">
+          <div class="card effect3">
+              <div class="card-footer m2">
+                  <div class="card-footer__info">
+                      <div style="justify-content: space-between; display: flex">
+                          <h6 class="card-footer__title"><img style="width: 20px; height: 20px; box-shadow: none; " src="assets/play.png" alt="add">Gully Boy</h6>
+                          <img style="width: 20px; height: 20px; box-shadow: none; margin-top: 3%" src="assets/add.png" alt="add">
+                      </div>
+                      <small><p>A coming-of-age story based on the lives of street rappers in Mumbai<br>2 hr 33 min. | 2019 | <span style="color: yellow" class="material-icons">grade</span> 4.3</p></small>
+                  </div>
+              </div>
+              <div class="card-body">
+                  <img src="assets/gully.jpeg" class="card-image">
+              </div>
+          </div>
+      </div>
+      <div class="mx-auto d-block mb-4 col-lg-3 col-sm-6">
+          <div class="card effect3">
+              <div class="card-footer m2">
+                  <div class="card-footer__info">
+                      <div style="justify-content: space-between; display: flex">
+                          <h6 class="card-footer__title"><img style="width: 20px; height: 20px; box-shadow: none; " src="assets/play.png" alt="add">Joker</h6>
+                          <img style="width: 20px; height: 20px; box-shadow: none; margin-top: 3%" src="assets/add.png" alt="add">
+                      </div>
+                      <small><p>A coming-of-age story based on the lives of street rappers in Mumbai<br>2 hr 33 min. | 2019 | <span style="color: yellow" class="material-icons">grade</span> 4.3</p></small>
+                  </div>
+              </div>
+              <div class="card-body">
+                  <img src="assets/joker.jpeg" class="card-image">
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+          
+
+
+<!--bollywood binge-->
+<div class="section py-3 mx-5">
+  <div class="heading mb-5">
+      <h2 class="pl-3">Bollywood Binge</h2>
+  </div>
+  <div class="row">
+      <div class="mx-auto d-block mb-4 col-lg-3 col-sm-6">
+          <div class="card effect3">
+              <div class="card-footer m2">
+                  <div class="card-footer__info">
+                      <div style="justify-content: space-between; display: flex">
+                          <h6 class="card-footer__title"><img style="width: 20px; height: 20px; box-shadow: none; " src="assets/play.png" alt="add">Ye Jawanani Hai Deewani</h6>
+                          <img style="width: 20px; height: 20px; box-shadow: none; margin-top: 3%" src="assets/add.png" alt="add">
+                      </div>
+                      <small><p>A coming-of-age story based on the lives of street rappers in Mumbai<br>2 hr 33 min. | 2019 | <span style="color: yellow" class="material-icons">grade</span> 4.3</p></small>
+                  </div>
+              </div>
+              <div class="card-body">
+                  <img src="assets/yjhd.jpeg" alt="lcdp" class="card-image">
+              </div>
+          </div>
+      </div>
+      <div class="mx-auto d-block mb-4 col-lg-3 col-sm-6">
+          <div class="card effect3">
+              <div class="card-footer m2">
+                  <div class="card-footer__info">
+                      <div style="justify-content: space-between; display: flex">
+                          <h6 class="card-footer__title"><img style="width: 20px; height: 20px; box-shadow: none; " src="assets/play.png" alt="add">Zindigi Na Milegi Dobara</h6>
+                          <img style="width: 20px; height: 20px; box-shadow: none; margin-top: 3%" src="assets/add.png" alt="add">
+                      </div>
+                      <small><p>A coming-of-age story based on the lives of street rappers in Mumbai<br>2 hr 33 min. | 2019 | <span style="color: yellow" class="material-icons">grade</span> 4.3</p></small>
+                  </div>
+              </div>
+              <div class="card-body">
+                  <img src="assets/znmd.jpeg" alt="lcdp" class="card-image">
+              </div>
+          </div>
+      </div>
+      <div class="mx-auto d-block mb-4 col-lg-3 col-sm-6">
+          <div class="card effect3">
+              <div class="card-footer m2">
+                  <div class="card-footer__info">
+                      <div style="justify-content: space-between; display: flex">
+                          <h6 class="card-footer__title"><img style="width: 20px; height: 20px; box-shadow: none; " src="assets/play.png" alt="add">Dilwale Dulhaniya Le Jayenge</h6>
+                          <img style="width: 20px; height: 20px; box-shadow: none; margin-top: 3%" src="assets/add.png" alt="add">
+                      </div>
+                      <small><p>A coming-of-age story based on the lives of street rappers in Mumbai<br>2 hr 33 min. | 2019 | <span style="color: yellow" class="material-icons">grade</span> 4.3</p></small>
+                  </div>
+              </div>
+              <div class="card-body">
+                  <img src="assets/dwdlj.jpeg" alt="lcdp" class="card-image">
+              </div>
+          </div>
+      </div>
+      <div class="mx-auto d-block mb-4 col-lg-3 col-sm-6">
+          <div class="card effect3">
+              <div class="card-footer m2">
+                  <div class="card-footer__info">
+                      <div style="justify-content: space-between; display: flex">
+                          <h6 class="card-footer__title"><img style="width: 20px; height: 20px; box-shadow: none; " src="assets/play.png" alt="add">Bhaag Milkha Bhaag</h6>
+                          <img style="width: 20px; height: 20px; box-shadow: none; margin-top: 3%" src="assets/add.png" alt="add">
+                      </div>
+                      <small><p>A coming-of-age story based on the lives of street rappers in Mumbai<br>2 hr 33 min. | 2019 | <span style="color: yellow" class="material-icons">grade</span> 4.3</p></small>
+                  </div>
+              </div>
+              <div class="card-body">
+                  <img src="assets/bmb.jpeg" alt="lcdp" class="card-image">
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--languages-->
+<div class="language py-1 mx-5">
+  <div class="heading mb-5">
+      <h2 class="pl-3">Watch in your language</h2>
+  </div>
+  <div class="row d-flex px-5">
+      <div class="mx-auto d-block col-md-3 col-lg-1 col-sm-4 col-xs-6 mb-4">
+          <img src="assets/Eng.png" alt="lcdp">
+      </div>
+      <div class="mx-auto d-block col-lg-1 col-md-3 col-sm-4 col-xs-6 mb-4">
+          <img src="assets/hindi.png" alt="lcdp">
+      </div>
+      <div class="mx-auto d-block col-lg-1 col-md-3 col-sm-4 col-xs-6 mb-4">
+          <img src="assets/marathi.png" alt="lcdp">
+      </div>
+      <div class="mx-auto d-block col-lg-1 col-md-3 col-sm-4 col-xs-6 mb-4">
+          <img src="assets/telegu.png" alt="lcdp">
+      </div>
+      <div class="mx-auto d-block col-lg-1 col-md-3 col-sm-4 col-xs-6 mb-4">
+          <img src="assets/tamil.png" alt="lcdp">
+      </div>
+      <div class="mx-auto d-block col-lg-1 col-md-3 col-sm-4 col-xs-6 mb-4">
+          <img src="assets/bengali.png" alt="lcdp">
+      </div>
+      <div class="mx-auto d-block col-lg-1 col-md-3 col-sm-4 col-xs-6">
+          <img src="assets/last.png" alt="lcdp">
+      </div>
+  </div>
+</div>
+
+
+<!--See more-->
+<div class="container-fluid pb-5">
+  <div class="row d-flex justify-content-center">
+      <div style="background-color: #203345" class="col-11 rounded">
+          <div style="color:gray; font-weight: 700; cursor: pointer; font-size: 18px" class="text-center py-2">
+              See More
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--Footer-->
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-3">
+            <h4 class="title">Gemalto</h4>
+            <p>
+                Gemalto was an international digital security company providing software applications, secure personal devices such as smart cards and tokens, and managed services.</p>
+            <ul class="social-icon">
+            <a href="https://www.facebook.com/thalesgroup" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/thalesgroup?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/thalesgroup/?hl=en" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCBUSZK1OyuyHpZnGilUzj9g" class="social"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="https://cpl.thalesgroup.com/partners/google" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
+            <a href="#" class="social"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+            </ul>
+            </div>
+        <div class="col-sm-3">
+            <h4 class="title">My Account</h4>
+            <span class="acount-icon">          
+            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Wish List</a>
+            <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i> Cart</a>
+            <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+            <a href="#"><i class="fa fa-globe" aria-hidden="true"></i> Language</a>           
+          </span>
+            </div>
+        <div class="col-sm-3">
+            <h4 class="title">Category</h4>
+            <div class="category">
+            <a href="https://www.netflix.com/in">Netflix</a>
+            <a href="https://www.primevideo.com/?ref_=dvm_pds_amz_in_as_s_g_146_mkw_slgAX6a65-dc&mrntrk=pcrid_386629063427_slid__pgrid_82649959367_pgeo_1007824_x__ptid_kwd-303629226711">Amazon-Prime</a>
+            <a href="https://www.hotstar.com/in">Hotstar</a>
+            <a href="https://www.zee5.com">Zee5</a>
+            <a href="https://www.sonyliv.com">Sony Liv</a>           
+            </div>
+            </div>
+        <div class="col-sm-3">
+            <h4 class="title">Payment Methods</h4>
+            <p>We Offer Payment methods through NetBanking,UPI,Debit/Credit Cards and Payment Gateways.</p>
+            <ul class="payment">
+            <li><a href="#"><i class="fa fa-cc-amex" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i></a></li>            
+            <li><a href="#"><i class="fa fa-paypal" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a></li>
+            </ul>
+            </div>
+        </div>
+        <hr>
+        
+        <div class="row text-center"> © 2021 Made with  by Anubhav.</div>
+        </div>
+        
+        
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+        </div>     
+    </body> 
+</html>
